@@ -13,7 +13,7 @@ const axiosInstance = axios.create({
 // Authentication: Login
 export const login = (email, password) =>
   new Promise((resolve, reject) => {
-    if (email === "test@example.com" && password === "password123") {
+    if (email === "test@example.com" && password === "asd123") {
       resolve({ data: { token: "mocked-token-12345" } });
     } else {
       reject("Invalid credentials");
@@ -22,7 +22,7 @@ export const login = (email, password) =>
 
 // Task Operations: CRUD
 // export const getTasks = () => axiosInstance.get("/todos");
-export const getTasks = async (page = 1, limit = 10) => {
+export const getTasks = async (page = 1, limit =10) => {
   return axiosInstance.get("/todos", {
     params: {
       _page: page,      // Page number

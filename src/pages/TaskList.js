@@ -42,7 +42,7 @@ const TaskList = () => {
 
   return (
     <div>
-      <Navbar /> {/* Display the Navbar */}
+      {/* <Navbar />  */}
       <div className="container mx-auto mt-6">
         <h2 className="text-2xl font-bold mb-4">Tasks</h2>
         {loading ? (

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
-import TaskList from "./pages/TaskList";
+import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         
         {/* Protected routes */}
         <Route
-          path="/tasks"
-          element={<PrivateRoute element={<TaskList />} />}
+          path="/dashboard/*"
+          element={<PrivateRoute element={<Dashboard />} />}
         />
       </Routes>
     </Router>

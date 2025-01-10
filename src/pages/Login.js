@@ -17,7 +17,7 @@ const Login = () => {
       // If successful, save token (replace with actual token response)
       localStorage.setItem("token", response.data.token); // Assuming the API returns a token
       // Redirect to task list page after successful login
-      navigate("/tasks");
+      navigate("/dashboard");
     } catch (error) {
       setError("Invalid credentials, please try again.");
     }
